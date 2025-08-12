@@ -101,7 +101,7 @@ nexshop_sdk/                    .............................................# r
 ├── requirements.txt               .............................................# dependências (se não usar pyproject)<br>
 ├── README.md<br>
 └── LICENSE<br>
-#Front-end
+# Front-end
 src/<br>
 │<br>
 ├── front/<br>
@@ -146,3 +146,4 @@ src/<br>
 │           ├── custom_button.dart        # Explicação: Botão padronizado do sistema<br>
 │           ├── custom_input_field.dart   # Explicação: Campo de texto padronizado do sistema<br>
 │           └── page_header.dart          # Explicação: Cabeçalho de páginas com título e breadcrumbs<br>
+
