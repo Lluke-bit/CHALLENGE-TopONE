@@ -425,6 +425,254 @@ loguru==0.5.0
 - **Manutenção**: Atualizações regulares de dependências
 - **Compatibilidade**: Testes de compatibilidade entre versões
 
+## 🔍 AWS Rekognition Provider
+
+### 🎯 Finalidade
+Integração com o Amazon Rekognition para serviços de análise facial, proporcionando reconhecimento facial em escala empresarial com alta precisão e baixa latência através de APIs gerenciadas pela AWS.
+
+### 📦 Dependências
+- `boto3` - SDK oficial da AWS para Python
+- `botocore` - Biblioteca core do AWS SDK
+- `logging` - Para logging estruturado de operações
+- `time` - Para medição de performance e timeouts
+- `base64` - Para codificação/decodificação de imagens
+- `json` - Para serialização de respostas da AWS
+
+### 🧩 Principais Componentes
+
+**Classes Principais:**
+- `AWSRekognitionProvider` - Implementação do provedor AWS
+- `RekognitionConfig` - Configuração específica do AWS Rekognition
+- `RekognitionResponse` - Modelo de resposta padronizado
+
+**Métodos Principais:**
+- `compare_faces()` - Compara duas imagens faciais
+- `detect_faces()` - Detecta faces em uma imagem
+- `search_faces()` - Busca faces em coleção (face matching)
+- `index_face()` - Indexa face em coleção para busca futura
+
+### 🔧 Funcionamento
+
+O provedor implementa a interface `BiometricProvider` com:
+
+1. **Autenticação AWS**: Configuração de credenciais via IAM
+2. **Chamadas API**: Comunicação com endpoints do Rekognition
+3. **Processamento**: Análise de imagens e extração de features
+4. **Normalização**: Adaptação de respostas AWS para formato padrão
+
+### 📊 Exemplo de Uso
+
+```python
+from eyeoftoga_sdk.biometrics.providers.aws_rekognition import AWSRekognitionProvider
+
+# Configurar provedor AWS
+aws_config = {
+    'region_name': 'us-east-1',
+    'aws_access_key_id': 'your-access-key',
+    'aws_secret_access_key': 'your-secret-key',
+    'collection_id': 'eyeoftoga-faces'
+}
+
+provider = AWSRekognitionProvider(aws_config)
+
+# Comparar duas faces
+with open("face1.jpg", "rb") as f1, open("face2.jpg", "rb") as f2:
+    result = provider.compare_faces(f1.read(), f2.read())
+    
+print(f"Similaridade: {result['similarity']:.2f}")
+print(f"Confiança: {result['confidence']:.2f}")
+
+# Resultado esperado:
+# Similaridade: 0.92
+# Confiança: 99.8
+```
+
+### ⚠️ Observações
+
+- **Custos AWS**: Utiliza Amazon Rekognition (cobrança por uso)
+- **Latência**: Depende da região AWS e qualidade de rede
+- **Limites**: Respeita limites de API da AWS (TPS)
+- **Disponibilidade**: Sujeito ao SLA da AWS (99.9% uptime)
+
 ---
 
-Esta documentação cobre os arquivos principais da estrutura atual do EyeOfToga SDK. Para uma documentação completa, seria necessário expandir para os demais arquivos e módulos específicos.
+## 🧪 Mock Provider
+
+### 🎯 Finalidade
+Provedor simulado para desenvolvimento, testes e ambientes de staging que não requerem integração com serviços reais de biometria, proporcionando comportamento previsível e configurável.
+
+### 📦 Dependências
+- `random` - Para geração de valores aleatórios controlados
+- `time` - Para simulação de latência de rede
+- `logging` - Para debug de operações simuladas
+- `unittest.mock` - Para criação de objetos mock (opcional)
+
+### 🧩 Principais Componentes
+
+**Classes Principais:**
+- `MockBiometricProvider` - Implementação do provedor mock
+- `MockConfig` - Configuração do comportamento simulado
+- `MockResponse` - Respostas predefinidas para testes
+
+**Comportamentos Simulados:**
+- ✅ Sucesso com similaridade configurável
+- ❌ Falhas controladas (erros de rede, timeout)
+- ⏱️ Latência artificial para testes de performance
+- 📊 Dados consistentes para testes repetíveis
+
+### 🔧 Funcionamento
+
+O provedor mock oferece várias estratégias de simulação:
+
+1. **Modo Determinístico**: Sempre retorna mesmo resultado
+2. **Modo Aleatório**: Gera resultados dentro de ranges configuráveis
+3. **Modo Sequencial**: Ciclo através de respostas predefinidas
+4. **Modo Erro**: Simula falhas específicas sob demanda
+
+### 📊 Exemplo de Uso
+
+```python
+from eyeoftoga_sdk.biometrics.providers.mock_provider import MockBiometricProvider
+
+# Configurar provedor mock para testes
+mock_config = {
+    'mode': 'deterministic',
+    'fixed_similarity': 0.85,
+    'fixed_confidence': 0.95,
+    'simulate_latency': True,
+    'min_latency_ms': 100,
+    'max_latency_ms': 500
+}
+
+provider = MockBiometricProvider(mock_config)
+
+# Teste com resultado previsível
+result = provider.compare_faces(b"fake_image_1", b"fake_image_2")
+print(f"Similaridade: {result['similarity']}")  # Sempre 0.85
+print(f"Confiança: {result['confidence']}")     # Sempre 0.95
+
+# Teste com modo aleatório
+random_config = {
+    'mode': 'random',
+    'min_similarity': 0.1,
+    'max_similarity': 0.99,
+    'error_rate': 0.1  # 10% de chance de erro
+}
+
+random_provider = MockBiometricProvider(random_config)
+```
+
+### ⚠️ Observações
+
+- **Desenvolvimento**: Ideal para desenvolvimento sem dependências externas
+- **Testes**: Permite testes unitários isolados e consistentes
+- **Performance**: Sem latência real de rede ou processamento
+- **Limitações**: Não oferece validação real de algoritmos biométricos
+
+---
+
+## 💻 Local Face Recognition Provider
+
+### 🎯 Finalidade
+Provedor de reconhecimento facial local utilizando bibliotecas open-source, proporcionando funcionalidade biométrica offline sem dependência de serviços cloud ou APIs externas.
+
+### 📦 Dependências
+- `face_recognition` - Biblioteca base para reconhecimento facial
+- `dlib` - Dependency principal para machine learning
+- `numpy` - Para operações matriciais e manipulação de embeddings
+- `cv2` (OpenCV) - Para processamento de imagem avançado
+- `PIL` - Para manipulação básica de imagens
+
+### 🧩 Principais Componentes
+
+**Classes Principais:**
+- `LocalFaceRecognitionProvider` - Implementação local
+- `FaceEncoding` - Representação numérica de características faciais
+- `LocalRecognitionConfig` - Configuração para processamento local
+
+**Funcionalidades:**
+- `extract_face_encodings()` - Extrai embeddings faciais
+- `calculate_face_distance()` - Calcula distância entre embeddings
+- `detect_face_locations()` - Detecta coordenadas de faces na imagem
+- `compare_face_encodings()` - Compara múltiplos encodings
+
+### 🔧 Funcionamento
+
+O provedor local opera completamente offline:
+
+1. **Detecção Facial**: Identifica rostos usando HOG + SVM
+2. **Extração de Features**: Gera embeddings de 128 dimensões
+3. **Comparação**: Calcula distância euclidiana entre embeddings
+4. **Decisão**: Aplica threshold para verificação
+
+### 📊 Exemplo de Uso
+
+```python
+from eyeoftoga_sdk.biometrics.providers.local_face_recognition import LocalFaceRecognitionProvider
+
+# Configurar provedor local
+local_config = {
+    'model': 'hog',  # ou 'cnn' para melhor precisão (mais lento)
+    'number_of_times_to_upsample': 1,
+    'tolerance': 0.6,  # Threshold para matching
+    'gpu_acceleration': False  # Usar GPU se disponível
+}
+
+provider = LocalFaceRecognitionProvider(local_config)
+
+# Carregar e comparar imagens
+image_1 = load_image("person_1.jpg")
+image_2 = load_image("person_2.jpg")
+
+result = provider.compare_faces(image_1, image_2)
+
+if result['match']:
+    print(f"Faces correspondem! Similaridade: {result['similarity']:.2f}")
+else:
+    print("Faces não correspondem")
+```
+
+### ⚠️ Observações
+
+- **Offline**: Funciona completamente sem internet
+- **Privacidade**: Dados nunca saem do dispositivo/local
+- **Performance**: Consome mais CPU que soluções cloud
+- **Precisão**: Alta precisão mas depende da qualidade das imagens
+- **Recursos**: Requer mais memória RAM que provedores cloud
+
+---
+
+## 📊 Comparação entre Provedores
+
+| Característica | AWS Rekognition | Local Recognition | Mock Provider |
+|----------------|-----------------|-------------------|---------------|
+| **Precisão** | ⭐⭐⭐⭐⭐ (99.9%) | ⭐⭐⭐⭐ (95-98%) | ⭐ (Configurável) |
+| **Latência** | ⭐⭐⭐⭐ (200-500ms) | ⭐⭐⭐ (500-2000ms) | ⭐⭐⭐⭐⭐ (0-100ms) |
+| **Custo** | $$$ (Por uso) | $ (Hardware) | $ (Zero) |
+| **Privacidade** | ⭐⭐ (Dados na AWS) | ⭐⭐⭐⭐⭐ (Local) | ⭐⭐⭐⭐⭐ (Local) |
+| **Offline** | ❌ | ✅ | ✅ |
+| **Escalabilidade** | ⭐⭐⭐⭐⭐ (Auto-scale) | ⭐⭐ (Limitado local) | ⭐⭐⭐⭐⭐ (Ilimitado) |
+| **Facilidade** | ⭐⭐⭐⭐ (API simples) | ⭐⭐ (Complexo setup) | ⭐⭐⭐⭐⭐ (Muito fácil) |
+
+---
+
+## 🔄 Estratégia de Fallback
+
+O EyeOfToga SDK implementa fallback automático entre provedores:
+
+```python
+# Estratégia de tentativa em ordem de preferência
+providers = [
+    AWSRekognitionProvider(aws_config),
+    LocalFaceRecognitionProvider(local_config),
+    MockBiometricProvider(mock_config)  # Fallback final
+]
+
+for provider in providers:
+    try:
+        result = provider.compare_faces(image1, image2)
+        break  # Sucesso, sair do loop
+    except Exception as e:
+        print(f"Provedor {type(provider).__name__} falhou: {e}")
+        continue # Tentar próximo provedor
+```
