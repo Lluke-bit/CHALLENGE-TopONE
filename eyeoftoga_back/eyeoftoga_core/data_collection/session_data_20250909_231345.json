@@ -1,0 +1,6481 @@
+{
+  "metadata": {
+    "export_time": "2025-09-09T23:13:45.347364",
+    "session_duration": 10.008663,
+    "total_events": 238,
+    "screen_info": {
+      "width": 1920,
+      "height": 1080,
+      "monitors": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "name": "\\\\.\\DISPLAY1"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "session_start": "2025-09-09T23:13:35.338705",
+    "session_duration_seconds": 10.01,
+    "total_events": 238,
+    "event_counts": {
+      "mouse_move": 238
+    },
+    "events_per_minute": {
+      "mouse_move": 1426.76
+    },
+    "total_clicks": 0,
+    "total_keypresses": 0,
+    "click_hotspots": [],
+    "activity_level": "Muito Alta",
+    "current_time": "2025-09-09T23:13:45.347440",
+    "screen_info": {
+      "width": 1920,
+      "height": 1080,
+      "monitors": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "name": "\\\\.\\DISPLAY1"
+        }
+      ]
+    }
+  },
+  "heatmap": {
+    "heatmap": [],
+    "total_clicks": 0
+  },
+  "events": [
+    {
+      "event_id": "event_0",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:35.900506",
+      "position": {
+        "x": 786,
+        "y": 670
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_1",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:35.910774",
+      "position": {
+        "x": 698,
+        "y": 695
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_2",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:35.920896",
+      "position": {
+        "x": 657,
+        "y": 708
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_3",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:35.931468",
+      "position": {
+        "x": 622,
+        "y": 721
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_4",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:35.941901",
+      "position": {
+        "x": 598,
+        "y": 727
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_5",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:35.952262",
+      "position": {
+        "x": 591,
+        "y": 730
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_6",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:35.972635",
+      "position": {
+        "x": 596,
+        "y": 725
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_7",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:35.982958",
+      "position": {
+        "x": 602,
+        "y": 718
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_8",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:35.993426",
+      "position": {
+        "x": 604,
+        "y": 715
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_9",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.003882",
+      "position": {
+        "x": 606,
+        "y": 712
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_10",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.014027",
+      "position": {
+        "x": 611,
+        "y": 706
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_11",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.024498",
+      "position": {
+        "x": 617,
+        "y": 703
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_12",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.034695",
+      "position": {
+        "x": 621,
+        "y": 701
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_13",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.044844",
+      "position": {
+        "x": 633,
+        "y": 698
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_14",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.055119",
+      "position": {
+        "x": 674,
+        "y": 689
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_15",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.065616",
+      "position": {
+        "x": 700,
+        "y": 684
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_16",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.076034",
+      "position": {
+        "x": 726,
+        "y": 679
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_17",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.086416",
+      "position": {
+        "x": 756,
+        "y": 676
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_18",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.097028",
+      "position": {
+        "x": 762,
+        "y": 675
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_19",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.107272",
+      "position": {
+        "x": 765,
+        "y": 674
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_20",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.127774",
+      "position": {
+        "x": 777,
+        "y": 666
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_21",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.138049",
+      "position": {
+        "x": 785,
+        "y": 663
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_22",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.200098",
+      "position": {
+        "x": 794,
+        "y": 670
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_23",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.210363",
+      "position": {
+        "x": 799,
+        "y": 679
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_24",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.220732",
+      "position": {
+        "x": 806,
+        "y": 691
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_25",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.231261",
+      "position": {
+        "x": 828,
+        "y": 730
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_26",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.241597",
+      "position": {
+        "x": 838,
+        "y": 749
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_27",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.251909",
+      "position": {
+        "x": 846,
+        "y": 763
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_28",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.262451",
+      "position": {
+        "x": 853,
+        "y": 774
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_29",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.293705",
+      "position": {
+        "x": 858,
+        "y": 775
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_30",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.303854",
+      "position": {
+        "x": 859,
+        "y": 769
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_31",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.314132",
+      "position": {
+        "x": 861,
+        "y": 764
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_32",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.324350",
+      "position": {
+        "x": 861,
+        "y": 760
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_33",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.334540",
+      "position": {
+        "x": 860,
+        "y": 743
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_34",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.344910",
+      "position": {
+        "x": 859,
+        "y": 732
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_35",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.355150",
+      "position": {
+        "x": 856,
+        "y": 716
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_36",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.365659",
+      "position": {
+        "x": 850,
+        "y": 699
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_37",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.375951",
+      "position": {
+        "x": 839,
+        "y": 665
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_38",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.386973",
+      "position": {
+        "x": 837,
+        "y": 655
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_39",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.397176",
+      "position": {
+        "x": 839,
+        "y": 645
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_40",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.407492",
+      "position": {
+        "x": 844,
+        "y": 632
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_41",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.418094",
+      "position": {
+        "x": 847,
+        "y": 628
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_42",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.428515",
+      "position": {
+        "x": 850,
+        "y": 625
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_43",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.438855",
+      "position": {
+        "x": 855,
+        "y": 619
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_44",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.449352",
+      "position": {
+        "x": 858,
+        "y": 616
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_45",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.470271",
+      "position": {
+        "x": 863,
+        "y": 612
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_46",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.833195",
+      "position": {
+        "x": 869,
+        "y": 609
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_47",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.895575",
+      "position": {
+        "x": 878,
+        "y": 609
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_48",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.916140",
+      "position": {
+        "x": 883,
+        "y": 612
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_49",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.926410",
+      "position": {
+        "x": 897,
+        "y": 616
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_50",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.937172",
+      "position": {
+        "x": 909,
+        "y": 617
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_51",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.947467",
+      "position": {
+        "x": 924,
+        "y": 621
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_52",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.957769",
+      "position": {
+        "x": 946,
+        "y": 626
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_53",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.968392",
+      "position": {
+        "x": 985,
+        "y": 640
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_54",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.978847",
+      "position": {
+        "x": 1003,
+        "y": 648
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_55",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.989436",
+      "position": {
+        "x": 1023,
+        "y": 659
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_56",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:36.999613",
+      "position": {
+        "x": 1055,
+        "y": 682
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_57",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.009934",
+      "position": {
+        "x": 1072,
+        "y": 694
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_58",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.020538",
+      "position": {
+        "x": 1091,
+        "y": 709
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_59",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.031077",
+      "position": {
+        "x": 1134,
+        "y": 748
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_60",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.041562",
+      "position": {
+        "x": 1160,
+        "y": 771
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_61",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.051872",
+      "position": {
+        "x": 1189,
+        "y": 798
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_62",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.062108",
+      "position": {
+        "x": 1230,
+        "y": 836
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_63",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.072718",
+      "position": {
+        "x": 1241,
+        "y": 847
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_64",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.082950",
+      "position": {
+        "x": 1250,
+        "y": 853
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_65",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.093451",
+      "position": {
+        "x": 1256,
+        "y": 857
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_66",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.103669",
+      "position": {
+        "x": 1259,
+        "y": 861
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_67",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.114156",
+      "position": {
+        "x": 1262,
+        "y": 863
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_68",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.124387",
+      "position": {
+        "x": 1265,
+        "y": 866
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_69",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.134806",
+      "position": {
+        "x": 1280,
+        "y": 880
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_70",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.145104",
+      "position": {
+        "x": 1292,
+        "y": 888
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_71",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.155794",
+      "position": {
+        "x": 1303,
+        "y": 898
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_72",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.166403",
+      "position": {
+        "x": 1322,
+        "y": 911
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_73",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.177054",
+      "position": {
+        "x": 1327,
+        "y": 915
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_74",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.187515",
+      "position": {
+        "x": 1330,
+        "y": 918
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_75",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.197700",
+      "position": {
+        "x": 1333,
+        "y": 919
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_76",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.207940",
+      "position": {
+        "x": 1337,
+        "y": 926
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_77",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.239326",
+      "position": {
+        "x": 1334,
+        "y": 939
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_78",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.249579",
+      "position": {
+        "x": 1332,
+        "y": 943
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_79",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.260191",
+      "position": {
+        "x": 1330,
+        "y": 947
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_80",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.270482",
+      "position": {
+        "x": 1329,
+        "y": 959
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_81",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.281087",
+      "position": {
+        "x": 1329,
+        "y": 969
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_82",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.291335",
+      "position": {
+        "x": 1329,
+        "y": 979
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_83",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.301490",
+      "position": {
+        "x": 1332,
+        "y": 988
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_84",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.311645",
+      "position": {
+        "x": 1333,
+        "y": 992
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_85",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.364552",
+      "position": {
+        "x": 1337,
+        "y": 996
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_86",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.375001",
+      "position": {
+        "x": 1349,
+        "y": 1005
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_87",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.385231",
+      "position": {
+        "x": 1358,
+        "y": 1011
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_88",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.395758",
+      "position": {
+        "x": 1366,
+        "y": 1018
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_89",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.406185",
+      "position": {
+        "x": 1375,
+        "y": 1026
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_90",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.416383",
+      "position": {
+        "x": 1403,
+        "y": 1038
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_91",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.427039",
+      "position": {
+        "x": 1411,
+        "y": 1046
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_92",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.437317",
+      "position": {
+        "x": 1415,
+        "y": 1050
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_93",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.447537",
+      "position": {
+        "x": 1418,
+        "y": 1053
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_94",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.665354",
+      "position": {
+        "x": 1414,
+        "y": 1055
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_95",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.675835",
+      "position": {
+        "x": 1410,
+        "y": 1056
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_96",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.686082",
+      "position": {
+        "x": 1406,
+        "y": 1056
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_97",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.696673",
+      "position": {
+        "x": 1403,
+        "y": 1056
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_98",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.728123",
+      "position": {
+        "x": 1394,
+        "y": 1055
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_99",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.749160",
+      "position": {
+        "x": 1389,
+        "y": 1054
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_100",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.759737",
+      "position": {
+        "x": 1383,
+        "y": 1052
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_101",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:37.780434",
+      "position": {
+        "x": 1379,
+        "y": 1051
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_102",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.020629",
+      "position": {
+        "x": 1378,
+        "y": 1044
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_103",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.031036",
+      "position": {
+        "x": 1376,
+        "y": 1039
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_104",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.041508",
+      "position": {
+        "x": 1374,
+        "y": 1032
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_105",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.051730",
+      "position": {
+        "x": 1369,
+        "y": 1025
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_106",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.062027",
+      "position": {
+        "x": 1362,
+        "y": 1014
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_107",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.072356",
+      "position": {
+        "x": 1341,
+        "y": 981
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_108",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.082838",
+      "position": {
+        "x": 1327,
+        "y": 965
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_109",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.093359",
+      "position": {
+        "x": 1308,
+        "y": 948
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_110",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.103963",
+      "position": {
+        "x": 1278,
+        "y": 919
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_111",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.114299",
+      "position": {
+        "x": 1266,
+        "y": 907
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_112",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.124488",
+      "position": {
+        "x": 1253,
+        "y": 895
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_113",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.134883",
+      "position": {
+        "x": 1227,
+        "y": 855
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_114",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.145058",
+      "position": {
+        "x": 1209,
+        "y": 833
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_115",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.155609",
+      "position": {
+        "x": 1189,
+        "y": 805
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_116",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.166071",
+      "position": {
+        "x": 1168,
+        "y": 780
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_117",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.176677",
+      "position": {
+        "x": 1119,
+        "y": 723
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_118",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.187300",
+      "position": {
+        "x": 1093,
+        "y": 692
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_119",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.197858",
+      "position": {
+        "x": 1073,
+        "y": 661
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_120",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.208358",
+      "position": {
+        "x": 1039,
+        "y": 610
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_121",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.218922",
+      "position": {
+        "x": 1029,
+        "y": 591
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_122",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.229192",
+      "position": {
+        "x": 1020,
+        "y": 575
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_123",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.239555",
+      "position": {
+        "x": 1006,
+        "y": 545
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_124",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.249763",
+      "position": {
+        "x": 1002,
+        "y": 531
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_125",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.260298",
+      "position": {
+        "x": 1001,
+        "y": 519
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_126",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.270805",
+      "position": {
+        "x": 997,
+        "y": 502
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_127",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.281213",
+      "position": {
+        "x": 997,
+        "y": 498
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_128",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.291743",
+      "position": {
+        "x": 997,
+        "y": 494
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_129",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.302729",
+      "position": {
+        "x": 998,
+        "y": 491
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_130",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:38.936562",
+      "position": {
+        "x": 994,
+        "y": 504
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_131",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:39.247482",
+      "position": {
+        "x": 992,
+        "y": 514
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_132",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:39.268365",
+      "position": {
+        "x": 991,
+        "y": 521
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_133",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:39.278494",
+      "position": {
+        "x": 989,
+        "y": 526
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_134",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:39.423269",
+      "position": {
+        "x": 986,
+        "y": 533
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_135",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:39.759779",
+      "position": {
+        "x": 971,
+        "y": 548
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_136",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:39.770181",
+      "position": {
+        "x": 967,
+        "y": 550
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_137",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:39.780397",
+      "position": {
+        "x": 964,
+        "y": 551
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_138",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:39.790777",
+      "position": {
+        "x": 959,
+        "y": 554
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_139",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:39.925719",
+      "position": {
+        "x": 956,
+        "y": 555
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_140",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:40.246693",
+      "position": {
+        "x": 950,
+        "y": 565
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_141",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:40.391488",
+      "position": {
+        "x": 946,
+        "y": 576
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_142",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:40.401703",
+      "position": {
+        "x": 944,
+        "y": 580
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_143",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:40.412047",
+      "position": {
+        "x": 943,
+        "y": 583
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_144",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:40.546106",
+      "position": {
+        "x": 950,
+        "y": 587
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_145",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:40.701205",
+      "position": {
+        "x": 961,
+        "y": 588
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_146",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:40.711597",
+      "position": {
+        "x": 966,
+        "y": 588
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_147",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:40.855909",
+      "position": {
+        "x": 969,
+        "y": 594
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_148",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:41.655866",
+      "position": {
+        "x": 974,
+        "y": 594
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_149",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:41.687350",
+      "position": {
+        "x": 978,
+        "y": 592
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_150",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:41.718519",
+      "position": {
+        "x": 982,
+        "y": 591
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_151",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:41.832168",
+      "position": {
+        "x": 989,
+        "y": 587
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_152",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:41.998599",
+      "position": {
+        "x": 983,
+        "y": 589
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_153",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.008795",
+      "position": {
+        "x": 974,
+        "y": 593
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_154",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.019250",
+      "position": {
+        "x": 965,
+        "y": 599
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_155",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.029746",
+      "position": {
+        "x": 957,
+        "y": 607
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_156",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.039949",
+      "position": {
+        "x": 932,
+        "y": 628
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_157",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.050320",
+      "position": {
+        "x": 915,
+        "y": 641
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_158",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.060496",
+      "position": {
+        "x": 894,
+        "y": 655
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_159",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.070671",
+      "position": {
+        "x": 846,
+        "y": 686
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_160",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.080924",
+      "position": {
+        "x": 817,
+        "y": 699
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_161",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.091260",
+      "position": {
+        "x": 795,
+        "y": 710
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_162",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.101697",
+      "position": {
+        "x": 777,
+        "y": 717
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_163",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.112297",
+      "position": {
+        "x": 734,
+        "y": 727
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_164",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.122819",
+      "position": {
+        "x": 718,
+        "y": 730
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_165",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.133078",
+      "position": {
+        "x": 708,
+        "y": 731
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_166",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.143493",
+      "position": {
+        "x": 704,
+        "y": 732
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_167",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.278621",
+      "position": {
+        "x": 694,
+        "y": 736
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_168",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.289220",
+      "position": {
+        "x": 691,
+        "y": 738
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_169",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.299567",
+      "position": {
+        "x": 687,
+        "y": 740
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_170",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.310181",
+      "position": {
+        "x": 674,
+        "y": 746
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_171",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.320632",
+      "position": {
+        "x": 667,
+        "y": 748
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_172",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.331181",
+      "position": {
+        "x": 658,
+        "y": 751
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_173",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.341480",
+      "position": {
+        "x": 650,
+        "y": 753
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_174",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.352061",
+      "position": {
+        "x": 624,
+        "y": 757
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_175",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.362195",
+      "position": {
+        "x": 617,
+        "y": 757
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_176",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.372612",
+      "position": {
+        "x": 612,
+        "y": 757
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_177",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.382823",
+      "position": {
+        "x": 609,
+        "y": 757
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_178",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.434713",
+      "position": {
+        "x": 608,
+        "y": 753
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_179",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.600351",
+      "position": {
+        "x": 616,
+        "y": 747
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_180",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.631410",
+      "position": {
+        "x": 623,
+        "y": 743
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_181",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.641860",
+      "position": {
+        "x": 627,
+        "y": 741
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_182",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.662700",
+      "position": {
+        "x": 641,
+        "y": 733
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_183",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.673144",
+      "position": {
+        "x": 649,
+        "y": 729
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_184",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.683417",
+      "position": {
+        "x": 658,
+        "y": 726
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_185",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.693895",
+      "position": {
+        "x": 664,
+        "y": 724
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_186",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.704341",
+      "position": {
+        "x": 688,
+        "y": 719
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_187",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.714504",
+      "position": {
+        "x": 698,
+        "y": 715
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_188",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.724796",
+      "position": {
+        "x": 709,
+        "y": 711
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_189",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.734984",
+      "position": {
+        "x": 728,
+        "y": 704
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_190",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.745129",
+      "position": {
+        "x": 736,
+        "y": 700
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_191",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.755421",
+      "position": {
+        "x": 743,
+        "y": 696
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_192",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.765979",
+      "position": {
+        "x": 749,
+        "y": 693
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_193",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.776295",
+      "position": {
+        "x": 765,
+        "y": 684
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_194",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.786619",
+      "position": {
+        "x": 777,
+        "y": 677
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_195",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.796954",
+      "position": {
+        "x": 790,
+        "y": 669
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_196",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.807079",
+      "position": {
+        "x": 820,
+        "y": 652
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_197",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.817669",
+      "position": {
+        "x": 834,
+        "y": 643
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_198",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.828168",
+      "position": {
+        "x": 850,
+        "y": 635
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_199",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.838338",
+      "position": {
+        "x": 861,
+        "y": 622
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_200",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.848731",
+      "position": {
+        "x": 873,
+        "y": 616
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_201",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.859319",
+      "position": {
+        "x": 889,
+        "y": 607
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_202",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.869823",
+      "position": {
+        "x": 901,
+        "y": 602
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_203",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.879985",
+      "position": {
+        "x": 919,
+        "y": 591
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_204",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.890291",
+      "position": {
+        "x": 927,
+        "y": 586
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_205",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.900512",
+      "position": {
+        "x": 930,
+        "y": 583
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_206",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.910747",
+      "position": {
+        "x": 933,
+        "y": 579
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_207",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.920886",
+      "position": {
+        "x": 934,
+        "y": 576
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_208",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.931215",
+      "position": {
+        "x": 936,
+        "y": 573
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_209",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.941398",
+      "position": {
+        "x": 937,
+        "y": 570
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_210",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.951968",
+      "position": {
+        "x": 941,
+        "y": 565
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_211",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.983179",
+      "position": {
+        "x": 947,
+        "y": 556
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_212",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:42.993730",
+      "position": {
+        "x": 949,
+        "y": 553
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_213",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.014299",
+      "position": {
+        "x": 952,
+        "y": 546
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_214",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.024498",
+      "position": {
+        "x": 954,
+        "y": 543
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_215",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.035080",
+      "position": {
+        "x": 957,
+        "y": 540
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_216",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.045518",
+      "position": {
+        "x": 960,
+        "y": 537
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_217",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.055832",
+      "position": {
+        "x": 966,
+        "y": 531
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_218",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.066079",
+      "position": {
+        "x": 969,
+        "y": 528
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_219",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.076197",
+      "position": {
+        "x": 972,
+        "y": 526
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_220",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.086679",
+      "position": {
+        "x": 975,
+        "y": 520
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_221",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.097273",
+      "position": {
+        "x": 977,
+        "y": 517
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_222",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.128183",
+      "position": {
+        "x": 981,
+        "y": 511
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_223",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.138728",
+      "position": {
+        "x": 984,
+        "y": 508
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_224",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.148962",
+      "position": {
+        "x": 990,
+        "y": 504
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_225",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.159397",
+      "position": {
+        "x": 1007,
+        "y": 493
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_226",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.169748",
+      "position": {
+        "x": 1014,
+        "y": 488
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_227",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.179960",
+      "position": {
+        "x": 1022,
+        "y": 485
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_228",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.190037",
+      "position": {
+        "x": 1028,
+        "y": 481
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_229",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.200129",
+      "position": {
+        "x": 1035,
+        "y": 477
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_230",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.262012",
+      "position": {
+        "x": 1043,
+        "y": 471
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_231",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.272193",
+      "position": {
+        "x": 1050,
+        "y": 466
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_232",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.282781",
+      "position": {
+        "x": 1054,
+        "y": 463
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_233",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.293378",
+      "position": {
+        "x": 1057,
+        "y": 460
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_234",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.303955",
+      "position": {
+        "x": 1061,
+        "y": 457
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_235",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.335093",
+      "position": {
+        "x": 1067,
+        "y": 451
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_236",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.407716",
+      "position": {
+        "x": 1072,
+        "y": 440
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event_237",
+      "type": "mouse_move",
+      "timestamp": "2025-09-09T23:13:43.511276",
+      "position": {
+        "x": 1073,
+        "y": 435
+      },
+      "key": null,
+      "button": null,
+      "scroll_direction": null,
+      "metadata": {
+        "screen_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "monitors": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "name": "\\\\.\\DISPLAY1"
+          }
+        ]
+      }
+    }
+  ]
+}

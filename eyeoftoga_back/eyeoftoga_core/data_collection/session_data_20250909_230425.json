@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "export_time": "2025-09-09T23:04:25.576134",
+    "session_duration": 0.108497,
+    "total_events": 0,
+    "screen_info": {
+      "width": 1920,
+      "height": 1080,
+      "monitors": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "name": "\\\\.\\DISPLAY1"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "status": "no_events",
+    "session_start": null,
+    "session_duration_seconds": 0,
+    "total_events": 0,
+    "event_counts": {},
+    "events_per_minute": {},
+    "total_clicks": 0,
+    "total_keypresses": 0,
+    "click_hotspots": [],
+    "activity_level": "Nenhuma",
+    "current_time": "2025-09-09T23:04:25.576150",
+    "screen_info": {
+      "width": 1920,
+      "height": 1080,
+      "monitors": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "name": "\\\\.\\DISPLAY1"
+        }
+      ]
+    }
+  },
+  "heatmap": {
+    "heatmap": [],
+    "total_clicks": 0
+  },
+  "events": []
+}
