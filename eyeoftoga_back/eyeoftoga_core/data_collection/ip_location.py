@@ -1,3 +1,13 @@
+import requests
+from device_info import DeviceEnvironmentSDK
+
+def get_location_by_public_ip():
+    sdk = DeviceEnvironmentSDK()
+    net_info = sdk.get_network_info()
+    public_ip = net_info.get('public_ip')
+    if not public_ip:
+        return {'error': 'IP público não encontrado'}
+    print(public_ip);   
 """
 IP Location SDK - Coleta de Dados com Geolocalização
 Desenvolvido para TCC - Curso de Cyber Segurança
@@ -536,6 +546,7 @@ class IPLocationSDK:
 
 def exemplo_uso():
     """Demonstração de uso da SDK"""
+    get_location_by_public_ip()
     print("=== Demonstração IP Location SDK ===\n")
     
     # Inicializar SDK
