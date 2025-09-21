@@ -246,9 +246,18 @@ class DeviceEnvironmentSDK:
             except Exception:
                 pass
 
+            # Obtém IP público
+            public_ip = None
+            try:
+                response = self.session.get('https://api.ipify.org?format=json', timeout=5)
+                public_ip = response.json().get('ip')
+            except Exception:
+                public_ip = None
+
             return {
                 'local_ipv4': local_ipv4,
                 'ip_list': ip_list,
+                'public_ip': public_ip,
                 'interfaces': interfaces,
                 'default_gateway': default_gateway,
                 'mac_address': self._get_mac_address(),
