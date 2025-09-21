@@ -32,7 +32,7 @@ class FaceRecognitionServer:
         self.current_frame = None
         self.recognition_results = []
         self.faces_directory = "known_faces"
-        self.recognition_threshold = 0.6  # Threshold para distância euclidiana (ajustável)
+        self.recognition_threshold = 1.0  # Threshold para distância euclidiana (ajustável)
         
         # Criar diretório para faces conhecidas se não existir
         if not os.path.exists(self.faces_directory):
