@@ -1,3 +1,4 @@
+
 """
 Session Behavior SDK - Monitoramento REAL de Comportamento
 Captura interações reais do usuário em tempo real em toda a tela
@@ -20,11 +21,12 @@ from pynput.mouse import Button, Controller as MouseController
 from pynput.keyboard import Key, Listener as KeyboardListener
 from device_info import DeviceEnvironmentSDK
 from ip_location import session_id, IPLocationSDK
-import face_recognition
 import cv2
+import numpy as np
+# from deepface import DeepFace # Removido DeepFace daqui, será usado apenas no servidor
 
 # Configuração de logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
 class EventType(Enum):
@@ -45,6 +47,11 @@ class RealTimeEvent:
     button: Optional[str] = None
     scroll_direction: Optional[str] = None
     metadata: Dict[str, Any] = field(default_factory=dict)
+
+# A classe FaceRecognitionMonitor foi removida ou simplificada, pois a lógica de reconhecimento
+# será centralizada no servidor Flask (face_recognition_server.py)
+# Se houver necessidade de alguma funcionalidade de monitoramento de face aqui, ela precisaria
+# ser redesenhada para interagir com o servidor ou ser muito mais leve.
 
 class RealTimeMonitor:
     def __init__(self):
@@ -77,89 +84,8 @@ class RealTimeMonitor:
         pygame.init()
         self.screen = pygame.display.set_mode((300, 200))
         pygame.display.set_caption("EyeOfToga Monitor")
+        # self.face_monitor = FaceRecognitionMonitor() # Removido, pois a lógica de face está no servidor
 
-        # Reconhecimento facial
-        self.face_monitoring = False
-        self.face_thread = None
-        self.face_data = []  # Lista de dicts com timestamp e nomes reconhecidos
-        self.known_face_encodings = []
-        self.known_face_names = []
-        self._load_known_faces()
-
-    def _load_known_faces(self, known_faces_folder="known_faces"):
-        import os
-        print(f"[DEBUG] Procurando rostos em: {os.path.abspath(known_faces_folder)}")
-        if not os.path.exists(known_faces_folder):
-            logger.warning(f"Pasta de rostos conhecidos não encontrada: {known_faces_folder}")
-            return
-        for filename in os.listdir(known_faces_folder):
-            if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
-                path = os.path.join(known_faces_folder, filename)
-                print(f"[DEBUG] Carregando imagem: {path}")
-                image = face_recognition.load_image_file(path)
-                encodings = face_recognition.face_encodings(image)
-                if encodings:
-                    print(f"[DEBUG] Rosto codificado para: {filename}")
-                    self.known_face_encodings.append(encodings[0])
-                    self.known_face_names.append(os.path.splitext(filename)[0])
-                else:
-                    print(f"[DEBUG] Nenhum rosto detectado na imagem: {filename}")
-
-    def start_face_monitoring(self):
-        if self.face_monitoring:
-            logger.warning("Reconhecimento facial já está ativo")
-            return
-        self.face_monitoring = True
-        self.face_thread = threading.Thread(target=self._face_monitoring_loop, daemon=True)
-        self.face_thread.start()
-        logger.info("Reconhecimento facial iniciado")
-
-    def stop_face_monitoring(self):
-        self.face_monitoring = False
-        if self.face_thread:
-            self.face_thread.join(timeout=2)
-        logger.info("Reconhecimento facial parado")
-
-    def _face_monitoring_loop(self):
-        video_capture = cv2.VideoCapture(0)
-        while self.face_monitoring:
-            ret, frame = video_capture.read()
-            if not ret:
-                print("[DEBUG] Não foi possível capturar frame da webcam.")
-                continue
-            rgb_frame = frame[:, :, ::-1]
-            face_locations = face_recognition.face_locations(rgb_frame)
-            if not face_locations:
-                print("[DEBUG] Nenhum rosto detectado na webcam neste frame.")
-                time.sleep(1)
-                continue
-            try:
-                face_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
-            except Exception as e:
-                print(f"[ERRO] Falha ao codificar rosto: {e}")
-                time.sleep(1)
-                continue
-            names = []
-            if not self.known_face_encodings:
-                print("[DEBUG] Nenhum rosto conhecido carregado para comparar.")
-            for face_encoding in face_encodings:
-                if self.known_face_encodings:
-                    matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
-                    name = "Unknown"
-                    if True in matches:
-                        first_match_index = matches.index(True)
-                        name = self.known_face_names[first_match_index]
-                    names.append(name)
-                else:
-                    names.append("Unknown")
-            if names:
-                print(f"[DEBUG] Rostos detectados na webcam: {names}")
-                self.face_data.append({
-                    "timestamp": datetime.now().isoformat(),
-                    "faces": names
-                })
-            time.sleep(1)
-        video_capture.release()
         
     def start_monitoring(self):
         """Inicia o monitoramento em tempo real"""
@@ -179,9 +105,9 @@ class RealTimeMonitor:
         )
         self.mouse_listener.start()
         self.keyboard_listener.start()
+        # self.face_monitor.start_recognition() # Removido
         logger.info("Monitoramento iniciado - Capturando suas interações em toda a tela...")
-        # Iniciar reconhecimento facial
-        self.start_face_monitoring()
+
         
     def stop_monitoring(self):
         """Para o monitoramento"""
@@ -190,9 +116,9 @@ class RealTimeMonitor:
             self.mouse_listener.stop()
         if self.keyboard_listener:
             self.keyboard_listener.stop()
+        # self.face_monitor.stop_recognition() # Removido
         logger.info("Monitoramento parado")
-        # Parar reconhecimento facial
-        self.stop_face_monitoring()
+
         
     def _on_mouse_move(self, x, y):
         """Callback para movimento do mouse em toda a tela"""
@@ -217,7 +143,7 @@ class RealTimeMonitor:
             
         timestamp = datetime.now()
         
-        button_name = str(button).split('.')[-1].lower()
+        button_name = str(button).split(".")[-1].lower()
         
         event_obj = RealTimeEvent(
             event_id=f"event_{len(self.events)}",
@@ -255,7 +181,7 @@ class RealTimeMonitor:
         )
         
         self.events.append(event_obj)
-        logger.info(f"Scroll capturado: {'up' if dy > 0 else 'down'} em ({x}, {y})")
+        logger.info(f"Scroll capturado: {"up" if dy > 0 else "down"} em ({x}, {y})")
     
     def _on_key_press(self, key):
         """Callback para tecla pressionada em toda a tela"""
@@ -269,7 +195,7 @@ class RealTimeMonitor:
             key_name = key.char
         except AttributeError:
             # Teclas especiais (shift, ctrl, etc)
-            key_name = str(key).split('.')[-1].lower()
+            key_name = str(key).split(".")[-1].lower()
         
         event_obj = RealTimeEvent(
             event_id=f"event_{len(self.events)}",
@@ -333,21 +259,12 @@ class RealTimeMonitor:
         print("\n" + "="*50)
         print("📊 ESTATÍSTICAS EM TEMPO REAL")
         print("="*50)
-        print(f"🖱️  Cliques totais: {stats['total_clicks']}")
-        print(f"⌨️  Teclas totais: {stats['total_keypresses']}")
-        print(f"⏱️  Duração: {stats['session_duration_seconds']:.1f}s")
-        print(f"📈 Cliques/min: {stats['clicks_per_minute']:.1f}")
-        print(f"📈 Teclas/min: {stats['keys_per_minute']:.1f}")
-        # Mostrar status do reconhecimento facial
-        if self.face_data:
-            last_faces = self.face_data[-1]["faces"]
-            if any(n != 'Unknown' for n in last_faces):
-                conhecidos = ', '.join([n for n in last_faces if n != 'Unknown'])
-                print(f"🧑‍💻 Reconhecimento facial: {conhecidos}")
-            else:
-                print("🧑‍💻 Reconhecimento facial: Nenhum rosto conhecido detectado.")
-        else:
-            print("🧑‍💻 Reconhecimento facial: Nenhum rosto detectado ainda.")
+        print(f"🖱️  Cliques totais: {stats["total_clicks"]}")
+        print(f"⌨️  Teclas totais: {stats["total_keypresses"]}")
+        print(f"⏱️  Duração: {stats["session_duration_seconds"]:.1f}s")
+        print(f"📈 Cliques/min: {stats["clicks_per_minute"]:.1f}")
+        print(f"📈 Teclas/min: {stats["keys_per_minute"]:.1f}")
+
         print("="*50)
     
     def get_session_summary(self) -> Dict[str, Any]:
@@ -435,211 +352,30 @@ class RealTimeMonitor:
             return "Muito Alta"
         elif total_epm > 50:
             return "Alta"
-        elif total_epm > 20:
-            return "Moderada"
-        elif total_epm > 5:
+        elif total_epm > 10:
+            return "Média"
+        elif total_epm > 0:
             return "Baixa"
         else:
-            return "Muito Baixa"
-            
-    def get_click_heatmap(self) -> Dict[str, Any]:
-        """Gera mapa de calor dos cliques em toda a tela"""
-        clicks = [
-            event for event in self.events 
-            if event.event_type == EventType.MOUSE_CLICK and event.position
-        ]
-        
-        if not clicks:
-            return {"heatmap": [], "total_clicks": 0}
-            
-        # Criar grid 10x10 para heatmap baseado na tela inteira
-        grid = [[0 for _ in range(10)] for _ in range(10)]
-        
-        for click in clicks:
-            x_percent = click.position["x"] / self.screen_width
-            y_percent = click.position["y"] / self.screen_height
-            
-            grid_x = min(9, int(x_percent * 10))
-            grid_y = min(9, int(y_percent * 10))
-            
-            grid[grid_y][grid_x] += 1
-            
-        return {
-            "heatmap": grid,
-            "total_clicks": len(clicks),
-            "screen_dimensions": {"width": self.screen_width, "height": self.screen_height}
-        }
-        
-    def export_session_data(self, filename: str = None):
-        device = DeviceEnvironmentSDK()
-        data_device = device.export_data('json')
-        if isinstance(data_device, str):
-            data_device = json.loads(data_device)
+            return "Nenhuma"
 
-        ip_location = IPLocationSDK()
-        ip = device.get_network_info()['public_ip']
-        response_ip = ip_location.generate_comprehensive_report(ip, session_id)
-        if isinstance(response_ip, str):
-            try:
-                response_ip = json.loads(response_ip)
-            except Exception:
-                response_ip = {"ip_report": response_ip}
 
-        if not filename:
-            filename = f"session_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-
-        data = {
-            "metadata": {
-                "export_time": datetime.now().isoformat(),
-                "session_duration": (datetime.now() - self.start_time).total_seconds() if self.start_time else 0,
-                "total_events": len(self.events),
-                "screen_info": {
-                    "width": self.screen_width,
-                    "height": self.screen_height,
-                    "monitors": self.monitors
-                }
-            },
-            "summary": self.get_session_summary(),
-            "heatmap": self.get_click_heatmap(),
-            "events": [
-                {
-                    "event_id": event.event_id,
-                    "type": event.event_type.value,
-                    "timestamp": event.timestamp.isoformat(),
-                    "position": event.position,
-                    "key": event.key,
-                    "button": event.button,
-                    "scroll_direction": event.scroll_direction,
-                    "metadata": event.metadata
-                }
-                for event in self.events
-            ],
-            "face_recognition": self.face_data
-        }
-        data_device.update(data)
-        data_device.update(response_ip)
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(data_device, f, indent=2, ensure_ascii=False)
-        logger.info(f"Dados exportados para {filename}")
-        return filename
-
-def recognize_faces(image_path, known_faces_folder):
-    # Carrega a imagem a ser reconhecida
-    image = face_recognition.load_image_file(image_path)
-    face_locations = face_recognition.face_locations(image)
-    face_encodings = face_recognition.face_encodings(image, face_locations)
-
-    known_encodings = []
-    known_names = []
-
-    # Carrega rostos conhecidos
-    import os
-    for filename in os.listdir(known_faces_folder):
-        if filename.endswith('.jpg') or filename.endswith('.png'):
-            known_image = face_recognition.load_image_file(os.path.join(known_faces_folder, filename))
-            encoding = face_recognition.face_encodings(known_image)
-            if encoding:
-                known_encodings.append(encoding[0])
-                known_names.append(os.path.splitext(filename)[0])
-
-    results = []
-    for (top, right, bottom, left), face_encoding in zip(face_locations, face_encodings):
-        matches = face_recognition.compare_faces(known_encodings, face_encoding)
-        name = "Unknown"
-        if True in matches:
-            first_match_index = matches.index(True)
-            name = known_names[first_match_index]
-        results.append({
-            "name": name,
-            "location": (top, right, bottom, left)
-        })
-    return results
-# Demonstração interativa aprimorada
-def interactive_demo():
-
-    """Demonstração interativa do monitoramento com foco em cliques e teclas"""
+# Exemplo de uso:
+if __name__ == "__main__":
     monitor = RealTimeMonitor()
-    print("🎯 EyeOfToga - Monitor de Comportamento em Tempo Real")
-    print("=" * 60)
-    print("Este programa vai capturar suas interações em TODA A TELA:")
-    print("• Cliques do mouse em qualquer lugar")
-    print("• Movimentos do mouse em qualquer lugar") 
-    print("• Teclas pressionadas")
-    print("• Scroll")
-    print()
-    print(f"Tela detectada: {monitor.screen_width}x{monitor.screen_height}")
-    print(f"Monitores: {len(monitor.monitors)}")
-    for i, m in enumerate(monitor.monitors):
-        print(f"  Monitor {i+1}: {m['width']}x{m['height']} at ({m['x']}, {m['y']})")
-    print()
-    print("Pressione ESC na janela para parar o monitoramento")
-    print("Pressione S na janela para mostrar estatísticas em tempo real")
-    print()
     
-    input("Pressione Enter para iniciar...")
-    
-    # Iniciar monitoramento
-    monitor.start_monitoring()
+    # A lógica de reconhecimento facial foi movida para face_recognition_server.py
+    # Para testar o monitoramento de eventos (mouse, teclado), descomente as linhas abaixo
+    # monitor.start_monitoring()
     
     try:
-        last_stats_time = time.time()
-        
-        while monitor.is_monitoring:
-            
-            # Mostrar estatísticas a cada 3 segundos
-            if time.time() - last_stats_time > 3:
-                monitor.show_live_stats()
-                last_stats_time = time.time()
-                
-            # Processar eventos do pygame apenas para controles da janela
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    monitor.is_monitoring = False
-                elif event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_ESCAPE:
-                        monitor.is_monitoring = False
-                    elif event.key == pygame.K_s:
-                        monitor.show_live_stats()
-                    
-            time.sleep(0.1)
-            
+        while True:
+            time.sleep(1) 
+            # monitor.show_live_stats() 
     except KeyboardInterrupt:
-        print("\nParando monitoramento...")
-    except Exception as e:
-        print(f"\nErro durante o monitoramento: {e}")
+        print("Monitoramento interrompido pelo usuário.")
     finally:
         monitor.stop_monitoring()
-        
-        # Mostrar relatório final
-        print("\n" + "=" * 60)
-        print("📊 RELATÓRIO FINAL DA SESSÃO")
-        print("=" * 60)
-        
-        final_summary = monitor.get_session_summary()
-        stats = monitor.get_click_and_key_stats()
-        print("")
-        print(f"⏰ Duração total: {stats['session_duration_seconds']:.1f} segundos")
-        print(f"🎯 Total de eventos: {final_summary.get('total_events', 0)}")
-        print(f"🖱️  Cliques registrados: {stats['total_clicks']}")
-        print(f"⌨️  Teclas pressionadas: {stats['total_keypresses']}")
-        print(f"📈 Cliques por minuto: {stats['clicks_per_minute']:.1f}")
-        print(f"📈 Teclas por minuto: {stats['keys_per_minute']:.1f}")
-        print(f"📊 Nível de atividade: {final_summary.get('activity_level', 'Nenhuma')}")
-        print()
-        
-        print("📋 Distribuição de eventos:")
-        for event_type, count in final_summary.get('event_counts', {}).items():
-            print(f"  {event_type}: {count} eventos")
-        
-        # Exportar dados
-        try:
-            filename = monitor.export_session_data()
-            print(f"\n💾 Dados exportados para: {filename}")
-        except Exception as e:
-            print(f"\n❌ Erro ao exportar dados: {e}")
-        
-        print("\n🎉 Análise comportamental concluída!")
+        print("Resumo da sessão:")
+        print(json.dumps(monitor.get_session_summary(), indent=4))
 
-if __name__ == "__main__":
-    # Executar demonstração interativa
-    interactive_demo()

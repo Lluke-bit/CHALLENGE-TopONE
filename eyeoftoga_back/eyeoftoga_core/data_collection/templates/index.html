@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reconhecimento Facial - Servidor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        #videoFeed {
+            max-width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            display: block; /* Garante que a imagem ocupe o espaço */
+            margin: 0 auto;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary { background: #007bff; color: white; }
+        .btn-primary:hover { background: #0056b3; }
+        .btn-danger { background: #dc3545; color: white; }
+        .btn-danger:hover { background: #c82333; }
+        .btn-success { background: #28a745; color: white; }
+        .btn-success:hover { background: #218838; }
+        .status {
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        .status.warning { background: #fff3cd; color: #856404; }
+        .upload-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px dashed #ddd;
+            border-radius: 10px;
+            text-align: center;
+            background: #fdfdfd;
+        }
+        #imagePreview {
+            max-width: 200px;
+            max-height: 200px;
+            margin: 10px auto;
+            border-radius: 5px;
+            display: block;
+            object-fit: contain;
+        }
+        .faces-list {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .face-item {
+            flex: 0 0 calc(33% - 20px); /* 3 items per row, adjust as needed */
+            max-width: calc(33% - 20px);
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            background: #f9f9f9;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        @media (max-width: 768px) {
+            .face-item {
+                flex: 0 0 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .face-item {
+                flex: 0 0 calc(100% - 20px);
+                max-width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Sistema de Reconhecimento Facial</h1>
+        
+        <div id="status" class="status warning">Sistema pronto</div>
+        
+        <div class="video-container">
+            <img id="videoFeed" src="/video_feed" alt="Feed da câmera" style="display: none;">
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn-primary" onclick="startCamera()">Iniciar Câmera</button>
+            <button id="stopBtn" class="btn-danger" onclick="stopCamera()" style="display: none;">Parar Câmera</button>
+        </div>
+        
+        <div class="upload-section">
+            <h3>Adicionar Nova Face</h3>
+            <input type="file" id="imageInput" accept="image/*" onchange="previewImage()">
+            <input type="text" id="nameInput" placeholder="Nome da pessoa" style="margin: 10px; padding: 5px;">
+            <button class="btn-success" onclick="addFace()">Adicionar Face</button>
+            <br>
+            <img id="imagePreview" style="display: none;">
+        </div>
+        
+        <div class="faces-list">
+            <h3>Faces Cadastradas</h3>
+            <div id="facesList"></div>
+        </div>
+    </div>
+
+    <script>
+        let isCameraRunning = false;
+        let recognitionUpdateInterval;
+
+        function updateStatus(message, type = '') {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = 'status ' + type;
+        }
+
+        async function startCamera() {
+            try {
+                updateStatus('Iniciando câmera...', 'warning');
+                const response = await fetch('/api/start_camera', { method: 'POST' });
+                const data = await response.json();
+                
+                if (data.success) {
+                    document.getElementById('videoFeed').style.display = 'block';
+                    document.getElementById('startBtn').style.display = 'none';
+                    document.getElementById('stopBtn').style.display = 'inline-block';
+                    updateStatus('Câmera ativa - Reconhecimento em tempo real', 'success');
+                    isCameraRunning = true;
+                    startRecognitionUpdates();
+                } else {
+                    updateStatus('Erro ao iniciar câmera. Verifique se a câmera está disponível e as permissões.', 'error');
+                }
+            } catch (error) {
+                console.error('Erro de conexão ao iniciar câmera:', error);
+                updateStatus('Erro de conexão ao iniciar câmera.', 'error');
+            }
+        }
+
+        async function stopCamera() {
+            try {
+                const response = await fetch('/api/stop_camera', { method: 'POST' });
+                
+                document.getElementById('videoFeed').style.display = 'none';
+                document.getElementById('startBtn').style.display = 'inline-block';
+                document.getElementById('stopBtn').style.display = 'none';
+                updateStatus('Câmera parada', 'warning');
+                isCameraRunning = false;
+                clearInterval(recognitionUpdateInterval);
+            } catch (error) {
+                console.error('Erro ao parar câmera:', error);
+                updateStatus('Erro ao parar câmera.', 'error');
+            }
+        }
+
+        function previewImage() {
+            const input = document.getElementById('imageInput');
+            const preview = document.getElementById('imagePreview');
+            
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                preview.style.display = 'none';
+            }
+        }
+
+        async function addFace() {
+            const nameInput = document.getElementById('nameInput');
+            const imageInput = document.getElementById('imageInput');
+            
+            if (!nameInput.value || !imageInput.files[0]) {
+                updateStatus('Por favor, forneça nome e selecione uma imagem.', 'error');
+                return;
+            }
+            
+            updateStatus('Adicionando face...', 'warning');
+            const reader = new FileReader();
+            reader.onload = async function(e) {
+                try {
+                    const response = await fetch('/api/add_face', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            name: nameInput.value,
+                            image: e.target.result
+                        })
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (data.success) {
+                        updateStatus(data.message, 'success');
+                        nameInput.value = '';
+                        imageInput.value = '';
+                        document.getElementById('imagePreview').style.display = 'none';
+                        loadFaces();
+                    } else {
+                        updateStatus('Erro: ' + data.error, 'error');
+                    }
+                } catch (error) {
+                    console.error('Erro de conexão ao adicionar face:', error);
+                    updateStatus('Erro de conexão ao adicionar face.', 'error');
+                }
+            };
+            reader.readAsDataURL(imageInput.files[0]);
+        }
+
+        async function loadFaces() {
+            try {
+                const response = await fetch('/api/get_faces');
+                const data = await response.json();
+                
+                const facesList = document.getElementById('facesList');
+                facesList.innerHTML = '';
+                
+                if (data.faces.length === 0) {
+                    facesList.innerHTML = '<p>Nenhuma face cadastrada ainda.</p>';
+                    return;
+                }
+
+                data.faces.forEach(face => {
+                    const faceDiv = document.createElement('div');
+                    faceDiv.className = 'face-item';
+                    // Para exibir a imagem, precisaríamos de um endpoint para servir as imagens salvas
+                    // Por enquanto, apenas o nome e data
+                    faceDiv.innerHTML = `<strong>${face.name}</strong><br><small>Adicionado: ${new Date(face.added_at).toLocaleString()}</small>`;
+                    facesList.appendChild(faceDiv);
+                });
+            } catch (error) {
+                console.error('Erro ao carregar faces:', error);
+                facesList.innerHTML = '<p style="color: red;">Erro ao carregar faces cadastradas.</p>';
+            }
+        }
+
+        function startRecognitionUpdates() {
+            if (recognitionUpdateInterval) {
+                clearInterval(recognitionUpdateInterval);
+            }
+            recognitionUpdateInterval = setInterval(async () => {
+                if (!isCameraRunning) return;
+                
+                try {
+                    const response = await fetch('/api/recognition_results');
+                    const data = await response.json();
+                    
+                    if (data.results && data.results.length > 0) {
+                        const recognizedNames = data.results.filter(r => r.name !== "Unknown").map(r => r.name);
+                        if (recognizedNames.length > 0) {
+                            updateStatus(`Detectado: ${recognizedNames.join(', ')}`, 'success');
+                        } else {
+                            updateStatus('Face(s) detectada(s), mas não reconhecida(s).', 'warning');
+                        }
+                    } else {
+                        updateStatus('Nenhuma face detectada.', 'warning');
+                    }
+                } catch (error) {
+                    console.error('Erro ao obter resultados de reconhecimento:', error);
+                    updateStatus('Erro ao obter resultados de reconhecimento.', 'error');
+                }
+            }, 1000); // Atualiza a cada segundo
+        }
+
+        // Carregar faces ao inicializar
+        document.addEventListener('DOMContentLoaded', loadFaces);
+    </script>
+</body>
+</html>
