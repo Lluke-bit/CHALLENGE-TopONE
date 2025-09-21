@@ -219,20 +219,36 @@ class DeviceEnvironmentSDK:
 
             for interface in netifaces.interfaces():
                 addrs = netifaces.ifaddresses(interface)
+                interfaces[interface] = {}
                 if netifaces.AF_INET in addrs:
                     ipv4_info = addrs[netifaces.AF_INET][0]
-                    interfaces[interface] = {
-                        'ipv4': ipv4_info.get('addr'),
-                        'netmask': ipv4_info.get('netmask'),
-                        'broadcast': ipv4_info.get('broadcast')
-                    }
-                
+                    interfaces[interface]['ipv4'] = ipv4_info.get('addr')
+                    interfaces[interface]['netmask'] = ipv4_info.get('netmask')
+                    interfaces[interface]['broadcast'] = ipv4_info.get('broadcast')
                 if netifaces.AF_INET6 in addrs:
                     ipv6_info = addrs[netifaces.AF_INET6][0]
                     interfaces[interface]['ipv6'] = ipv6_info.get('addr')
-            
+
+            # Obtém IP local principal
+            try:
+                hostname = socket.gethostname()
+                local_ipv4 = socket.gethostbyname(hostname)
+            except Exception:
+                local_ipv4 = None
+
+            # Coleta todos os IPs do host
+            ip_list = []
+            try:
+                for info in socket.getaddrinfo(hostname, None):
+                    ip = info[4][0]
+                    if ip not in ip_list:
+                        ip_list.append(ip)
+            except Exception:
+                pass
+
             return {
-                'ip_info': socket.getaddrinfo(),
+                'local_ipv4': local_ipv4,
+                'ip_list': ip_list,
                 'interfaces': interfaces,
                 'default_gateway': default_gateway,
                 'mac_address': self._get_mac_address(),
