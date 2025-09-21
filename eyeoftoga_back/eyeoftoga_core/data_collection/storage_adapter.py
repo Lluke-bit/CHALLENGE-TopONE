@@ -20,8 +20,6 @@ from pynput.mouse import Button, Controller as MouseController
 from pynput.keyboard import Key, Listener as KeyboardListener
 from device_info import DeviceEnvironmentSDK
 from ip_location import session_id, IPLocationSDK
-import face_recognition
-import cv2
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -78,88 +76,15 @@ class RealTimeMonitor:
         self.screen = pygame.display.set_mode((300, 200))
         pygame.display.set_caption("EyeOfToga Monitor")
 
-        # Reconhecimento facial
-        self.face_monitoring = False
-        self.face_thread = None
-        self.face_data = []  # Lista de dicts com timestamp e nomes reconhecidos
-        self.known_face_encodings = []
-        self.known_face_names = []
-        self._load_known_faces()
 
-    def _load_known_faces(self, known_faces_folder="known_faces"):
-        import os
-        print(f"[DEBUG] Procurando rostos em: {os.path.abspath(known_faces_folder)}")
-        if not os.path.exists(known_faces_folder):
-            logger.warning(f"Pasta de rostos conhecidos não encontrada: {known_faces_folder}")
-            return
-        for filename in os.listdir(known_faces_folder):
-            if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
-                path = os.path.join(known_faces_folder, filename)
-                print(f"[DEBUG] Carregando imagem: {path}")
-                image = face_recognition.load_image_file(path)
-                encodings = face_recognition.face_encodings(image)
-                if encodings:
-                    print(f"[DEBUG] Rosto codificado para: {filename}")
-                    self.known_face_encodings.append(encodings[0])
-                    self.known_face_names.append(os.path.splitext(filename)[0])
-                else:
-                    print(f"[DEBUG] Nenhum rosto detectado na imagem: {filename}")
 
-    def start_face_monitoring(self):
-        if self.face_monitoring:
-            logger.warning("Reconhecimento facial já está ativo")
-            return
-        self.face_monitoring = True
-        self.face_thread = threading.Thread(target=self._face_monitoring_loop, daemon=True)
-        self.face_thread.start()
-        logger.info("Reconhecimento facial iniciado")
 
-    def stop_face_monitoring(self):
-        self.face_monitoring = False
-        if self.face_thread:
-            self.face_thread.join(timeout=2)
-        logger.info("Reconhecimento facial parado")
 
-    def _face_monitoring_loop(self):
-        video_capture = cv2.VideoCapture(0)
-        while self.face_monitoring:
-            ret, frame = video_capture.read()
-            if not ret:
-                print("[DEBUG] Não foi possível capturar frame da webcam.")
-                continue
-            rgb_frame = frame[:, :, ::-1]
-            face_locations = face_recognition.face_locations(rgb_frame)
-            if not face_locations:
-                print("[DEBUG] Nenhum rosto detectado na webcam neste frame.")
-                time.sleep(1)
-                continue
-            try:
-                face_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
-            except Exception as e:
-                print(f"[ERRO] Falha ao codificar rosto: {e}")
-                time.sleep(1)
-                continue
-            names = []
-            if not self.known_face_encodings:
-                print("[DEBUG] Nenhum rosto conhecido carregado para comparar.")
-            for face_encoding in face_encodings:
-                if self.known_face_encodings:
-                    matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
-                    name = "Unknown"
-                    if True in matches:
-                        first_match_index = matches.index(True)
-                        name = self.known_face_names[first_match_index]
-                    names.append(name)
-                else:
-                    names.append("Unknown")
-            if names:
-                print(f"[DEBUG] Rostos detectados na webcam: {names}")
-                self.face_data.append({
-                    "timestamp": datetime.now().isoformat(),
-                    "faces": names
-                })
-            time.sleep(1)
-        video_capture.release()
+
+
+
+
+
         
     def start_monitoring(self):
         """Inicia o monitoramento em tempo real"""
@@ -180,8 +105,7 @@ class RealTimeMonitor:
         self.mouse_listener.start()
         self.keyboard_listener.start()
         logger.info("Monitoramento iniciado - Capturando suas interações em toda a tela...")
-        # Iniciar reconhecimento facial
-        self.start_face_monitoring()
+
         
     def stop_monitoring(self):
         """Para o monitoramento"""
@@ -191,8 +115,7 @@ class RealTimeMonitor:
         if self.keyboard_listener:
             self.keyboard_listener.stop()
         logger.info("Monitoramento parado")
-        # Parar reconhecimento facial
-        self.stop_face_monitoring()
+
         
     def _on_mouse_move(self, x, y):
         """Callback para movimento do mouse em toda a tela"""
@@ -338,16 +261,7 @@ class RealTimeMonitor:
         print(f"⏱️  Duração: {stats['session_duration_seconds']:.1f}s")
         print(f"📈 Cliques/min: {stats['clicks_per_minute']:.1f}")
         print(f"📈 Teclas/min: {stats['keys_per_minute']:.1f}")
-        # Mostrar status do reconhecimento facial
-        if self.face_data:
-            last_faces = self.face_data[-1]["faces"]
-            if any(n != 'Unknown' for n in last_faces):
-                conhecidos = ', '.join([n for n in last_faces if n != 'Unknown'])
-                print(f"🧑‍💻 Reconhecimento facial: {conhecidos}")
-            else:
-                print("🧑‍💻 Reconhecimento facial: Nenhum rosto conhecido detectado.")
-        else:
-            print("🧑‍💻 Reconhecimento facial: Nenhum rosto detectado ainda.")
+
         print("="*50)
     
     def get_session_summary(self) -> Dict[str, Any]:
@@ -513,8 +427,7 @@ class RealTimeMonitor:
                     "metadata": event.metadata
                 }
                 for event in self.events
-            ],
-            "face_recognition": self.face_data
+            ]
         }
         data_device.update(data)
         data_device.update(response_ip)
@@ -523,37 +436,6 @@ class RealTimeMonitor:
         logger.info(f"Dados exportados para {filename}")
         return filename
 
-def recognize_faces(image_path, known_faces_folder):
-    # Carrega a imagem a ser reconhecida
-    image = face_recognition.load_image_file(image_path)
-    face_locations = face_recognition.face_locations(image)
-    face_encodings = face_recognition.face_encodings(image, face_locations)
-
-    known_encodings = []
-    known_names = []
-
-    # Carrega rostos conhecidos
-    import os
-    for filename in os.listdir(known_faces_folder):
-        if filename.endswith('.jpg') or filename.endswith('.png'):
-            known_image = face_recognition.load_image_file(os.path.join(known_faces_folder, filename))
-            encoding = face_recognition.face_encodings(known_image)
-            if encoding:
-                known_encodings.append(encoding[0])
-                known_names.append(os.path.splitext(filename)[0])
-
-    results = []
-    for (top, right, bottom, left), face_encoding in zip(face_locations, face_encodings):
-        matches = face_recognition.compare_faces(known_encodings, face_encoding)
-        name = "Unknown"
-        if True in matches:
-            first_match_index = matches.index(True)
-            name = known_names[first_match_index]
-        results.append({
-            "name": name,
-            "location": (top, right, bottom, left)
-        })
-    return results
 # Demonstração interativa aprimorada
 def interactive_demo():
 
