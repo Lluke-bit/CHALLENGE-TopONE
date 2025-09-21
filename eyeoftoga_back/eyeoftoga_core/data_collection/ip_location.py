@@ -27,6 +27,8 @@ from device_info import DeviceEnvironmentSDK
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+session_id = "sess_" + hashlib.md5(str(time.time()).encode()).hexdigest()[:8]
+
 
 class AuthMethod(Enum):
     """Métodos de autenticação suportados"""
@@ -548,7 +550,7 @@ def exemplo_uso():
     device = DeviceEnvironmentSDK()
     retorno_network = device.get_network_info()
     ip_teste = retorno_network["public_ip"]  # IP do Google DNS para teste
-    session_id = "sess_" + hashlib.md5(str(time.time()).encode()).hexdigest()[:8]
+    
     
     print(f"Testando com IP: {ip_teste}")
     print(f"Session ID: {session_id}\n")
