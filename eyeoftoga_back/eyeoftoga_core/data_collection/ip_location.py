@@ -18,7 +18,7 @@ import logging
 from enum import Enum
 import hashlib
 import time
-
+from device_info import DeviceEnvironmentSDK
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO)
@@ -542,7 +542,9 @@ def exemplo_uso():
     sdk = IPLocationSDK()
     
     # Simular dados de uma requisição
-    ip_teste = "8.8.8.8"  # IP do Google DNS para teste
+    device = DeviceEnvironmentSDK()
+    retorno_network = device.get_network_info()
+    ip_teste = retorno_network["public_ip"]  # IP do Google DNS para teste
     session_id = "sess_" + hashlib.md5(str(time.time()).encode()).hexdigest()[:8]
     
     print(f"Testando com IP: {ip_teste}")
