@@ -196,11 +196,11 @@ class DeviceEnvironmentSDK:
             timezone = datetime.datetime.now(datetime.timezone.utc).astimezone().tzname()
             
             return {
-                'language': lang,
-                'encoding': encoding,
-                'timezone': timezone,
-                'locale': locale.setlocale(locale.LC_ALL),
-                'current_time': datetime.datetime.now().isoformat()
+                'language': lang.lower(),
+                'encoding': encoding.lower(),
+                'timezone': timezone.lower(),
+                'locale': locale.setlocale(locale.LC_ALL).lower(),
+                'current_time': datetime.datetime.now().isoformat().lower()
             }
         except Exception as e:
             return {'error': f'Erro ao obter informações de localização: {str(e)}'}
