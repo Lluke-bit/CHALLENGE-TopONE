@@ -1,6 +1,7 @@
 import requests
 from device_info import DeviceEnvironmentSDK
 
+
 """
 IP Location SDK - Coleta de Dados com Geolocalização
 Desenvolvido para TCC - Curso de Cyber Segurança
@@ -22,6 +23,7 @@ from enum import Enum
 import hashlib
 import time
 from device_info import DeviceEnvironmentSDK
+
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO)
@@ -613,6 +615,3 @@ def exemplo_uso():
     
     return relatorio
 
-
-if __name__ == "__main__":
-    exemplo_uso()
