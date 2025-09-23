@@ -1,4 +1,0 @@
-import aws_rekognition
-import local_face_recognizer
-import mock_provider
-

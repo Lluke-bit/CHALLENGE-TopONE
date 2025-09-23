@@ -1,4 +1,0 @@
-import aws_rekognition_provider
-import face_capture
-import face_validation
-

@@ -352,136 +352,148 @@ class RealTimeMonitor:
             "screen_dimensions": {"width": self.screen_width, "height": self.screen_height}
         }
 
-    def export_session_data(self, filename: str = None, calculate_risk: bool = False, auth_override: Optional[AuthenticationData] = None, face_verification_result: Optional[Dict[str, Any]] = None):
-        """
-        Exporta dados da sessão para JSON.
+    def export_session_data(
+            self,
+            filename: str = None,
+            calculate_risk: bool = False,
+            auth_override: Optional[AuthenticationData] = None,
+        face_verification_result: Optional[Dict[str, Any]] = None
+        ):
+            """
+            Exporta dados da sessão para JSON.
 
-        Params:
-            filename: nome do arquivo (opcional)
-            calculate_risk: se True, calcula e injeta o risk_score no relatório IP
-            auth_override: se passado, será usado como AuthenticationData para cálculo de risco
-            face_verification_result: resultado da verificação facial (sucesso/falha e username)
-        """
-        device = DeviceEnvironmentSDK()
-        data_device = device.export_data('json')
-        if isinstance(data_device, str):
-            try:
-                data_device = json.loads(data_device)
-            except Exception:
-                data_device = {}
-
-        ip_location = IPLocationSDK()
-        ip_info = device.get_network_info() or {}
-        ip = ip_info.get('public_ip')
-
-        # SOBRESCREVER o IP se auth_override tiver um IP diferente
-        if auth_override and auth_override.ip_address and auth_override.ip_address != ip:
-            ip = auth_override.ip_address
-            ip_info['public_ip'] = ip
-
-        # gerar relatório IP (pode falhar — tratamos)
-        try:
-            response_ip = ip_location.generate_comprehensive_report(ip, session_id)
-            if isinstance(response_ip, str):
+            Params:
+                filename: nome do arquivo (opcional)
+                calculate_risk: se True, calcula e injeta o risk_score no relatório IP
+                auth_override: se passado, será usado como AuthenticationData para cálculo de risco
+                face_verification_result: resultado da verificação facial (sucesso/falha e username)
+            """
+            device = DeviceEnvironmentSDK()
+            data_device = device.export_data('json')
+            if isinstance(data_device, str):
                 try:
-                    response_ip = json.loads(response_ip)
+                    data_device = json.loads(data_device)
                 except Exception:
-                    response_ip = {"ip_report": response_ip}
-        except Exception as e:
-            logger.error(f"Erro ao gerar relatório IP: {e}")
-            response_ip = {}
+                    data_device = {}
 
-        if not filename:
-            filename = f"session_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            ip_location = IPLocationSDK()
+            ip_info = device.get_network_info() or {}
+            ip = ip_info.get('public_ip')
 
-        data = {
-            "metadata": {
-                "export_time": datetime.now().isoformat(),
-                "session_duration": (datetime.now() - self.start_time).total_seconds() if self.start_time else 0,
-                "total_events": len(self.events),
-                "screen_info": {
-                    "width": self.screen_width,
-                    "height": self.screen_height,
-                    "monitors": self.monitors
-                }
-            },
-            "summary": self.get_session_summary(),
-            "heatmap": self.get_click_heatmap(),
-            "events": [
-                {
-                    "event_id": event.event_id,
-                    "type": event.event_type.value,
-                    "timestamp": event.timestamp.isoformat(),
-                    "position": event.position,
-                    "key": event.key,
-                    "button": event.button,
-                    "scroll_direction": event.scroll_direction,
-                    "metadata": event.metadata
-                }
-                for event in self.events
-            ]
-        }
+            # SOBRESCREVER o IP se auth_override tiver um IP diferente
+            if auth_override and auth_override.ip_address and auth_override.ip_address != ip:
+                ip = auth_override.ip_address
+                ip_info['public_ip'] = ip
 
-        # Adicionar informações de verificação facial ao export
-        if face_verification_result:
-            data["face_verification"] = face_verification_result
-
-        # === cálculo de score/injeção (opcional) ===
-        if calculate_risk:
+            # gerar relatório IP (pode falhar — tratamos)
             try:
-                scorer = RiskScorer()
-
-                # auth_override tem precedência; caso contrário criamos um auth conservador
-                if auth_override is not None:
-                    auth = auth_override
-                else:
-                    auth = AuthenticationData()
-                    auth.username = "unknown"
-                    auth.ip_address = ip
-                    auth.auth_method = AuthMethod.PASSWORD
-                    auth.auth_result = AuthResult.SUCCESS
-                    auth.consecutive_failures = 0
-
-                risk_result = scorer.calcular_score(ip or "0.0.0.0", session_id, data["summary"], auth)
-
-                # garantir estrutura de security_analysis
-                response_ip.setdefault("security_analysis", {})
-                # atualizar risk_factors e recommendations com merges se existirem
-                existing_factors = response_ip["security_analysis"].get("risk_factors", [])
-                merged_factors = existing_factors + [f for f in (risk_result.get("risk_factors") or []) if f not in existing_factors]
-                response_ip["security_analysis"]["risk_factors"] = merged_factors
-
-                # adicionar risk_score detalhado
-                response_ip["security_analysis"]["risk_score"] = risk_result
-
-                # definir risk_level também no security_analysis de topo
-                response_ip["security_analysis"]["risk_level"] = risk_result.get("risk_level", response_ip["security_analysis"].get("risk_level", "unknown"))
-
-                # se houver recomendações geradas pelo scorer (opcional), injetar
-                if "recommendations" in risk_result:
-                    existing_recs = response_ip["security_analysis"].get("recommendations", [])
-                    merged_recs = existing_recs + [r for r in (risk_result.get("recommendations") or []) if r not in existing_recs]
-                    response_ip["security_analysis"]["recommendations"] = merged_recs
-
+                response_ip = ip_location.generate_comprehensive_report(ip, session_id)
+                if isinstance(response_ip, str):
+                    try:
+                        response_ip = json.loads(response_ip)
+                    except Exception:
+                        response_ip = {"ip_report": response_ip}
             except Exception as e:
-                logger.error(f"Erro durante cálculo de risco: {e}")
+                logger.error(f"Erro ao gerar relatório IP: {e}")
+                response_ip = {}
 
-        # === juntar tudo e escrever ===
-        try:
-            data_device.update(data)
-            data_device.update(response_ip)
-        except Exception:
-            # fallback simples caso data_device não seja dict
-            exported = {"device": data_device, "data": data, "ip_report": response_ip}
-            with open(filename, 'w', encoding='utf-8') as f:
-                json.dump(exported, f, indent=2, ensure_ascii=False)
-            logger.info(f"Dados exportados para {filename}")
-            return filename
+            # === definir filename com pasta registros ===
+            registros_dir = "registros"
+            os.makedirs(registros_dir, exist_ok=True)  # cria a pasta se não existir
 
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(data_device, f, indent=2, ensure_ascii=False)
-        logger.info(f"Dados exportados para {filename}")
-        return filename
+            if not filename:
+                filename = f"session_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            filepath = os.path.join(registros_dir, filename)
+
+            data = {
+                "metadata": {
+                    "export_time": datetime.now().isoformat(),
+                    "session_duration": (datetime.now() - self.start_time).total_seconds() if self.start_time else 0,
+                    "total_events": len(self.events),
+                    "screen_info": {
+                        "width": self.screen_width,
+                        "height": self.screen_height,
+                        "monitors": self.monitors
+                    }
+                },
+                "summary": self.get_session_summary(),
+                "heatmap": self.get_click_heatmap(),
+                "events": [
+                    {
+                        "event_id": event.event_id,
+                        "type": event.event_type.value,
+                        "timestamp": event.timestamp.isoformat(),
+                        "position": event.position,
+                        "key": event.key,
+                        "button": event.button,
+                        "scroll_direction": event.scroll_direction,
+                        "metadata": event.metadata
+                    }
+                    for event in self.events
+                ]
+            }
+
+            # Adicionar informações de verificação facial ao export
+            if face_verification_result:
+                data["face_verification"] = face_verification_result
+
+            # === cálculo de score/injeção (opcional) ===
+            if calculate_risk:
+                try:
+                    scorer = RiskScorer()
+
+                    # auth_override tem precedência; caso contrário criamos um auth conservador
+                    auth = auth_override if auth_override is not None else AuthenticationData()
+                    if auth_override is None:
+                        auth.username = "unknown"
+                        auth.ip_address = ip
+                        auth.auth_method = AuthMethod.PASSWORD
+                        auth.auth_result = AuthResult.SUCCESS
+                        auth.consecutive_failures = 0
+
+                    risk_result = scorer.calcular_score(ip or "0.0.0.0", session_id, data["summary"], auth)
+
+                    # garantir estrutura de security_analysis
+                    response_ip.setdefault("security_analysis", {})
+
+                    # atualizar risk_factors
+                    existing_factors = response_ip["security_analysis"].get("risk_factors", [])
+                    merged_factors = existing_factors + [f for f in (risk_result.get("risk_factors") or []) if f not in existing_factors]
+                    response_ip["security_analysis"]["risk_factors"] = merged_factors
+
+                    # adicionar risk_score detalhado
+                    response_ip["security_analysis"]["risk_score"] = risk_result
+
+                    # definir risk_level
+                    response_ip["security_analysis"]["risk_level"] = risk_result.get(
+                        "risk_level",
+                        response_ip["security_analysis"].get("risk_level", "unknown")
+                    )
+
+                    # adicionar recomendações se existirem
+                    if "recommendations" in risk_result:
+                        existing_recs = response_ip["security_analysis"].get("recommendations", [])
+                        merged_recs = existing_recs + [r for r in (risk_result.get("recommendations") or []) if r not in existing_recs]
+                        response_ip["security_analysis"]["recommendations"] = merged_recs
+
+                except Exception as e:
+                    logger.error(f"Erro durante cálculo de risco: {e}")
+
+            # === juntar tudo e escrever ===
+            try:
+                data_device.update(data)
+                data_device.update(response_ip)
+            except Exception:
+                exported = {"device": data_device, "data": data, "ip_report": response_ip}
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    json.dump(exported, f, indent=2, ensure_ascii=False)
+                logger.info(f"Dados exportados para {filepath}")
+                return filepath
+
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(data_device, f, indent=2, ensure_ascii=False)
+            logger.info(f"Dados exportados para {filepath}")
+            return filepath
 
 
 class FaceVerifier:
